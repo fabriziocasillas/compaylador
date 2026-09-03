@@ -4,6 +4,10 @@
 #include <stdlib.h>
 #include <string.h>
 
+
+/* pues esta funcion basicmanete te da el nombre del tipo
+ * del token que le estas dando
+*/
 const char *token_type_name(TokenType type) {
     switch (type) {
         case TOKEN_EOF: return "TOKEN_EOF";
@@ -41,6 +45,13 @@ const char *token_type_name(TokenType type) {
     return "UNKNOWN";
 }
 
+/**
+ * inicializas un token, primero checas que el token o supongo
+ * la extension de memoria que te dan existe, despues tratas de hacer malloc
+ * y si puedes, pues ya cpias el lexema y guardas el resto
+ * 
+ * 
+ */
 int token_init(Token *token, TokenType type, const char *lexeme,
                size_t line, size_t column) {
     size_t length;
@@ -62,6 +73,10 @@ int token_init(Token *token, TokenType type, const char *lexeme,
     return 1;
 }
 
+
+/**
+ * pues nada un impresor de token
+ */
 void token_print(const Token *token) {
     if (token == NULL) {
         return;
@@ -82,6 +97,10 @@ void token_print(const Token *token) {
            token->lexeme);
 }
 
+
+/**
+ * destruyes tokens y 
+ */
 void token_destroy(Token *token) {
     if (token == NULL) {
         return;

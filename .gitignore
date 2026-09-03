@@ -10,6 +10,15 @@ compile_commands.json
 CTestTestfile.cmake
 _deps
 CMakeUserPresets.json
+minic
+base-inicial/build/
+base-inicial/minic
+..gitignore.swp
+
+
+
+
+
 
 # CLion
 #  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
