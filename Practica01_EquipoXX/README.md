@@ -1,7 +1,7 @@
 # Práctica 1 — Infraestructura básica del analizador léxico
 
 
-##Información general
+## Información general
 Descripción
 
 | Campo | Información |
