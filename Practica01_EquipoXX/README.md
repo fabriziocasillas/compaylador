@@ -57,13 +57,13 @@ Practica01_EquipoXX/
 |include/lexer/token.h | Definición de TokenType y Token, además de las funciones relacionadas.|
 |Makefile | Automatización de compilación, limpieza y ejecución de pruebas.|
 
-##Requisitos
+## Requisitos
 GCC con soporte para C11.
 GNU Make.
 Dependencias adicionales: ninguna.
 
 
-##Compilación
+## Compilación
 
 Desde el directorio raíz de la práctica, ejecutar:
 
@@ -89,7 +89,7 @@ Para realizar los tests
 make test
 ```
 
-##Ejecución
+## Ejecución
 
 El programa recibe exactamente un archivo fuente como argumento:
 
@@ -126,7 +126,7 @@ Para el token TOKEN_EOF no se muestra lexema:
 Los mensajes de error relacionados con la ejecución del programa se envían a la salida de error (stderr).
 
 
-##Funcionalidades implementadas
+## Funcionalidades implementadas
 
 La implementación actual de la Práctica 1 incluye:
 
@@ -175,7 +175,7 @@ SEMICOLON (;)
 
 El enumerado TokenType también contiene tipos correspondientes a identificadores, palabras reservadas y operadores compuestos. Estos se encuentran preparados para futuras extensiones, pero no forman parte del alcance de la Práctica 1.
 
-##Pruebas
+## Pruebas
 
 Las pruebas desarrolladas por el equipo se encuentran en:
 
@@ -208,11 +208,11 @@ enteros de longitud considerable.
 
 Las pruebas comparan automáticamente la salida generada por minic con los archivos de salida esperada. La ejecución de la suite debe finalizar con 'Todos los tests pasaron.'
 
-##Problemas conocidos
+## Problemas conocidos
 
 No se conocen problemas adicionales a las limitaciones propias del alcance de la Práctica 1 (de momento).
 
-##Notas de ejecución
+## Notas de ejecución
 
 El programa debe ejecutarse desde el directorio raíz de la práctica cuando se utilicen las rutas relativas mostradas en los ejemplos.
 
