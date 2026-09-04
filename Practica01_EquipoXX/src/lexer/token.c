@@ -6,7 +6,9 @@
 
 
 /* pues esta funcion basicmanete te da el nombre del tipo
- * del token que le estas dando
+ * del token que le estas dando, en base en el tipo mismo del token, 
+ * el tipo error que se encarga de todos los demas caracteres, esta esto dentro
+ * de la logia, y si por algun motivo logra saltarse eso simplemente regresa UNKNOWN
 */
 const char *token_type_name(TokenType type) {
     switch (type) {
@@ -75,7 +77,11 @@ int token_init(Token *token, TokenType type, const char *lexeme,
 
 
 /**
- * pues nada un impresor de token
+ * Imprime un token utilizando el formato especificado
+ *
+ * Los tokens TOKEN_EOF se imprimen sin lexema.
+ *
+ * @param token token a imprimir
  */
 void token_print(const Token *token) {
     if (token == NULL) {
@@ -99,7 +105,12 @@ void token_print(const Token *token) {
 
 
 /**
- * destruyes tokens y 
+ * liberas la memoria
+ *
+ * no usamos free y creamos eta funcion porque puede haber sido
+ * almacenado en memoria automática por el llamador.
+ *
+ * @param token Token cuyos recursos serán liberados.
  */
 void token_destroy(Token *token) {
     if (token == NULL) {
