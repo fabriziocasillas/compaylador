@@ -156,8 +156,7 @@ SEMICOLON (;)
 - [ ]Tokens reconocidos en esta práctica
 
 |Token | Lexema|
-|---|--.|
-
+|---|---|
 | INTEGER | [0-9]+ |
 | PLUS | + |
 | MINUS | - |
